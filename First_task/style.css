@@ -1,0 +1,14 @@
+table, td {
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+td {
+    padding: 7px;
+    width: 150px;
+}
+
+.table {
+    display: flex;
+    justify-content: center;
+}
