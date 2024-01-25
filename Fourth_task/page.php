@@ -29,10 +29,10 @@ foreach ($match[0] as $key => $word) {//Пробегаемся по получе
 
 $newText = implode(' ', array_slice($match[0], 0, $index + 1)) . '...';//Обьединяем эти 29 слов и все html теги до 29 слова в одну строку
 $newText = preg_replace("#(?<=>)\s+\.#", ".", $newText);//Решаем кое какие проблемы с форматированием, там получились лишние пробелы между последним словом в предложении и точкой
-$newText = preg_replace_callback("#(<[bi]>)\s+#", function($match) {
+$newText = preg_replace_callback("#(<[bi]>)\s+#", function ($match) {
     return "$match[1]";
 }, $newText);
-$newText = preg_replace_callback("#\s+?(</[bi]>)#", function($match) {
+$newText = preg_replace_callback("#\s+?(</[bi]>)#", function ($match) {
     return "$match[1]";
 }, $newText);
 

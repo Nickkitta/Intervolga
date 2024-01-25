@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div class="table">
-        <?php require_once('./output.php'); ?>
-    </div>
+<div class="table">
+    <?php require_once('./output.php'); ?>
+</div>
 </body>
 </html>

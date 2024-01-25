@@ -9,12 +9,12 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <form action="./page.php" method="post" id="form_comm">
-        <textarea name="comment" id="text"></textarea>
-        <input type="submit">
-    </form>
-    <div id="comm_block">
-        <?php require_once("./logic.php"); ?>
-    </div>
+<form action="./page.php" method="post" id="form_comm">
+    <textarea name="comment" id="text"></textarea>
+    <input type="submit">
+</form>
+<div id="comm_block">
+    <?php require_once("./logic.php"); ?>
+</div>
 </body>
 </html>
